@@ -81,7 +81,7 @@ Ubuntu 24.04 da Netplan konfiguratsiyasi uchun `gateway4` eskirgan, biz yangi `r
     ```yaml
     network:
       ethernets:
-        enp3s0:
+        enp4s0:
           dhcp4: false
           addresses: [192.168.0.2/24]
           routes:
@@ -158,7 +158,7 @@ subnet 192.168.0.0 netmask 255.255.255.0 {
 Keyin interfeysni ko'rsatamiz:
 `nano /etc/default/isc-dhcp-server`
 ```bash
-INTERFACESv4="enp3s0"  # O'z interfeys nomingiz
+INTERFACESv4="enp4s0"  # O'z interfeys nomingiz
 ```
 
 Xizmatni ishga tushirish:
